@@ -31,6 +31,7 @@ class BotaoDegrade extends HTMLElement{
             box-shadow: 0 0 15px 1px #fcd603;
             font-family: 'Roboto', sans-serif;
             color: white;
+            margin:auto;
             
 
         }
