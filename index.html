@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <title>O Cara das Ideias</title>
     <link rel="shortcut icon" href="imagens/PNG_6-2.png" type="image/x-icon">
-    <script src="botaoDegrade.js" defer></script>
-    <script defer src="modulos.js"></script>  
+    <script src="js/botaoDegrade.js" defer></script>
+    <script src="js/conteudoFaq.js" defer></script>
+    <script defer src="js/iconeCheck.js"></script> 
+    <script defer src="js/modulos.js"></script> 
+    
 </head>
 <body>
     <section id="principal">
@@ -75,7 +78,7 @@
             <botao-degrade></botao-degrade>
 
             <P class="degrade">
-                Endenda como eu te levar <span> do zero ao Sucesso Profissional </span> 
+                Entenda como eu vou te levar <span> do zero ao Sucesso Profissional </span> 
             </P>
             <p class="texto-padrao">
                 Este curso é totalmente voltado em para seu desenvolvimento profissionais, oferecendo insights práticos que realmente funcionam. Com uma abordagem interativa, você terá a oportunidade de aplicar o que aprender em cenários do mundo real e receber feedback personalizado. <br><br>
@@ -123,84 +126,138 @@
                 </div>
 
             </div>
-
+       
         </article>
-        <article class="modulos">
-
+                
+        <article class="container-modulos">
+         
             <p class="degrade">
-                Tudo isso  será dividido em X módulos
+                Tudo isso  será dividido em 9 módulos
             </p>
 
-            <div class="modulo">
+            <div class="modulos">
+                <conteudo-modulo
+                    modulo="Módulo 1 - Introdução ao Mercado de Trabalho Moderno"
+                    conteudo="Falta escrever texto desse conteúdo">
+                </conteudo-modulo>
 
-                <span>
-                    Módulo 1 - Introdução ao Mercado de Trabalho
-                </span> 
+                <conteudo-modulo
+                    modulo="Módulo 2 - Desenvolvimento de Habilidades"
+                    conteudo="Saiba quais habilidades são mais valorizadas pelos trabalhadores e como adquiri-las, seja por meio de educação formal ou treinamento prático.">
+                </conteudo-modulo>
+
+                <conteudo-modulo
+                    modulo="Módulo 3 - Branding Pessoal"
+                    conteudo=" Aprenda a criar uma identidade profissional sólida que destaque suas habilidades, paixões e conquistas, ajudando você a se destacar em um mar de candidatos.">
+                </conteudo-modulo>
                 
-                <button id="btn-modulo1" >&#x276F;</button>
-
-                <p id="conteudo-oculto1">
-                    Falta escrever texto desse conteúdo
-                </p>
-
-            </div>
+                <conteudo-modulo
+                    modulo="Módulo 4 - Procura de Emprego Eficaz"
+                    conteudo="Domine as estratégias de procura de emprego, Aprimore suas habilidades de comunicação e aprenda a impressionar em entrevistas.">
+                </conteudo-modulo>
             
-            <div class="modulo">
 
-                <span>Módulo 2 - Desenvolvimento de Habilidades</span> 
+                <conteudo-modulo
+                    modulo="Módulo 5 - Equilíbrio entre Vida e Trabalho"
+                    conteudo="Abordaremos a importância do equilíbrio entre a vida pessoal e profissional para manter uma carreira satisfatória e saudável.">
+                </conteudo-modulo>
+            
+                <conteudo-modulo
+                    modulo="Módulo 6 - Networking eficaz"
+                    conteudo="Aprenda a estabelecer relacionamentos profissionais sólidos e aproveite ao máximo as oportunidades de networking.">
+                </conteudo-modulo>
+            
+                <conteudo-modulo
+                    modulo="Módulo 7 - Gestão de Carreira a Longo Prazo"
+                    conteudo="Explore estratégias para avançar em sua carreira, defina metas claras e mantenha-se motivado ao longo de sua jornada profissional.">
+                </conteudo-modulo>
+
+                <conteudo-modulo
+                    modulo="Módulo 8 - Conflitos e Tomada de Decisão"
+                    conteudo="Saiba como lidar com situações problemáticas e tomar decisões acertadas.">
+                </conteudo-modulo>
+            
+                <conteudo-modulo
+                    modulo="Módulo 9 - Como ser o Queridinho do chefe"
+                    conteudo="Habilidades para ser ter uma promoção super rápido na empresa."
+                    data-ultimo="ultimo">
+                </conteudo-modulo>
+
                 
-                <button id="btn-modulo2">&#x276F;</button>
-
-                <p id="conteudo-oculto2">
-                    Saiba quais habilidades são mais valorizadas pelos trabalhadores e como adquiri-las, seja por meio de educação formal ou treinamento prático.
-                </p>
-
             </div>
+            <botao-degrade></botao-degrade>
+        </article>
 
-            <div class="modulo">
+        <article class="author">
+            <img src="imagens/Euler.jpeg" id="euler-author" alt="Foto de Euler Mendes">
+           
+            <h3>
+                Aprenda com quem entende do assunto
+            </h3>
 
-                <span> 
-                    Módulo 3 - Branding Pessoal
-                </span> 
+            <h4>
+                Muito prazer, 
+            </h4>
+            <p>
+                Meu nome é Euler Mendes, mais conhecido como O Cara das Ideias
+            </p>
                 
-                <button id="btn-modulo3">&#x276F;</button>
+            <p>
+                Sou estudioso do assunto de desenvolvimento pessoal e profissional a mais de 14 anos e no decorrer desse tempo sempre obtive vantagens competitivas perante meus concorrentes.
+            </p>
+            <p>
+                Hoje sinto orgulho de me posicionar dessa forma, mas nem sempre foi assim.
+            </p>
+            <p>
+                Saí de uma realidade desafiadora, onde precisava estudar durante a manhã e trabalhar com serviço braçal juntamente com meu pai na parte da tarde para ajudar em casa.
+            </p>
+            <p>
+                Apesar de ter sido um período muito difícil, desde essa época comecei a enxergar que eu era diferente das outras pessoas. Não pelo fato de ser mais inteligente ou ter uma habilidade específica, mas sim por ser observador.
+            </p>
+            <p>
+                Aprendi desde cedo que precisava saber o que faria uma pessoa que nasceu pobre de mentalidade se tornar uma pessoa que eleva sua mente para outro nível para ter uma mentalidade rica e de sucesso.
+            </p>
+            <p>
+                Foi isso que busquei dos 16 anos até os 30. Conhecimento que me fez ser um destaque por onde eu passo. Mas sabe o mais importante disso? 
+            </p>
+            <p>
+                Vou te passar tudo que aprendi nesses últimos 14 anos de forma estruturada para que você não seja só mais um na multidão e alcance várias promoções e destaques profissionais.
+            </p>
+        </article>
+        
+        <article class="descritivo">
+            <P>
+                Veja tudo que você terá acesso garantindo sua vaga hoje
+            </P>
+            
+            <icone-check></icone-check>
 
-                <p id="conteudo-oculto3">
-                    Aprenda a criar uma identidade profissional sólida que destaque suas habilidades, paixões e conquistas, ajudando você a se destacar em um mar de candidatos.
-                </p>
+            <span>9 Lives em grupo + 20 aulas gravadas</span>
+            <span class="valor-item">R$ 780,00</span>
 
-            </div>
+            <icone-check></icone-check>
 
-            <div class="modulo">
+            <span> 
+                10 planilhas em Excel para Gestão de Carreira + Resumos em PDF das aulas
+            </span>
+            <span class="valor-item">
+                R$ 157,00
+            </span>
 
-                <span>
-                    Módulo 4 - Procura de Emprego Eficaz
-                </span> 
-                
-                <button id="btn-modulo4">&#x276F;</button>
+            <icone-check></icone-check>
 
-                <p id="conteudo-oculto4">
-                    Domine as estratégias de procura de emprego, Aprimore suas habilidades de comunicação e aprenda a impressionar em entrevistas.
-                </p>
-
-            </div>
-           <!-- <span class="teste">&#10004;</span> -->
-
-            <!-- <div class="modulo">
-
-                <span>
-                    
-                </span> 
-                
-                <button id="btn-modulo1" >&#8964;</button>
-
-                <p id="conteudo-oculto1">
-                    
-                </p>
-
-            </div> -->
+            <span> 
+              7 super aulas bônus gravadas <br>
+              (mentalidade, renda extra)
+            </span>
+            <span class="valor-item">
+                R$ 98,00
+            </span>
+            <br>
+            <span>Total: R$ 1.035,00</span>
 
         </article>
+
         
         <article id="container-price">
             <div class="price">
@@ -221,7 +278,44 @@
             </div>
             
         </article>
+        <article class="garantia">
+            
+                <h3>
+                    Este é um treinamento 100% seguro
+                </h3>
+                
+                <p>
+                    Por lei de direito do consumidor você tem até 7 dias de compra para solicitar o reembolso do seu dinheiro.
+                </p>
+                <p>
+                    Então, caso sinta que dominar a comunicação para ter as melhores oportunidades na sua vida não seja sua prioridade, pode pedir reembolso e nós devolvemos o seu dinheiro!
+                </p>
+           
+
+        </article>
+        
+        <article class="container-faq">
+            <h3>-- Faq --</h3>
+          
+            <conteudo-faq
+            pergunta="Onde irei receber o acesso do treinamento?"
+            resposta="resposta a definir">
+            </conteudo-faq>
+
+            <conteudo-faq
+            pergunta="Quando terei acesso ao bônus?"
+            resposta="resposta a definir">
+            </conteudo-faq>
+
+            <conteudo-faq
+            pergunta="Quanto custa o treinamento?"
+            resposta="resposta a definir">
+            </conteudo-faq>
+
+        </article>
+      
        
+        
     </section>
       
 </body>

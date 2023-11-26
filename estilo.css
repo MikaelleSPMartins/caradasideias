@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+.garantia{
+    width: 280px;
+    background-image: linear-gradient(180deg,#f67600,#f59419,#f4b510,#f67600,#f59419);
+    /* background-size: 400% 200%;  */
+    border: 2px solid yellow;
+    height: 280px;
+}  

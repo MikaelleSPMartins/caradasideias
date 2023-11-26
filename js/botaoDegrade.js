@@ -32,8 +32,7 @@ class BotaoDegrade extends HTMLElement{
             font-family: 'Roboto', sans-serif;
             color: white;
             margin:auto;
-            
-
+            transition: .2s ease-in-out;
         }
         
         @keyframes degrade-animado {
@@ -48,7 +47,8 @@ class BotaoDegrade extends HTMLElement{
         .botao-degrade:hover{
             
             cursor: pointer;
-            transition: all .8s;
+            transform: scale(1.1);
+            
         }
         @media (836px <= width){
             .botao-degrade{
