@@ -22,7 +22,7 @@ class ConteudoModulo extends HTMLElement{
         btnModulo.setAttribute("class", "botao-modulo");
         btnModulo.innerHTML= '&#x276F';
         
-        btnModulo.addEventListener('click', function() {
+        module.addEventListener('click', function() {
     
             if(conteudo.style.display  === "block"){
                 conteudo.style.display = "none";
@@ -53,10 +53,12 @@ class ConteudoModulo extends HTMLElement{
             margin: 5px;
             grid-template-columns: 290px 50px;
             border-radius: 5px;
+            cursor: pointer;
         }
        
         .modulo>span{
             background: #0D0D0D; 
+            
         }
 
         .conteudo{
@@ -65,6 +67,7 @@ class ConteudoModulo extends HTMLElement{
             font-size: 15px;
             color: rgb(219, 207, 192);
             margin: 10px 0;
+            
         }
 
         .botao-modulo{
