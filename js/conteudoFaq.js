@@ -22,7 +22,7 @@ class ConteudoFaq extends HTMLElement{
         btnFaq.setAttribute("class", "botao-faq");
         btnFaq.innerHTML= '+';
         
-        btnFaq.addEventListener('click', function() {
+        faq.addEventListener('click', function() {
     
             if(resposta.style.display  === "block"){
                 resposta.style.display = "none";
@@ -51,12 +51,14 @@ class ConteudoFaq extends HTMLElement{
             display: grid;
             padding: 10px;
             margin: 5px;
-            grid-template-columns: 250px 50px;
+            grid-template-columns: 320px 30px;
             border-radius: 5px;
+            cursor: pointer;
         }
        
         .pergunta{
-            border-bottom: 2px solid #fcd603;   
+            border-bottom: 2px solid #fcd603;  
+             
         }
 
         .resposta{

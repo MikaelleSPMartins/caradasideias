@@ -136,40 +136,14 @@ body{
     width: 360px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 30px auto;
     font-size: 1em;
     align-items: center;
-    margin-bottom: 30px;
+    
     
 }
 
 
-
-/*
-.modulo{
-    display: grid;
-    padding: 10px;
-    background: #0D0D0D;
-    margin: 5px;
-    grid-template-columns: 310px 50px;
-    border-radius: 5px;
-}
-.modulo>span{
-    background: #0D0D0D; 
-}
-
-.modulo>button{
-    font-size:20px;
-    width: 20px;   
-    border: none;
-    cursor: pointer;
-    color: #fcd603;
-    background: #0D0D0D;
-    align-items:flex-end;
-    text-align: center;
-    transition:  .3s;
-    
-} */
 
 .author{
     text-align: center;
@@ -193,7 +167,7 @@ body{
     text-transform: uppercase;
 }
 
-.author>p{
+.author>p, .publico-alvo>p{
     text-align: center;
     letter-spacing: 1px;
     line-height: 20px;
@@ -203,7 +177,7 @@ body{
 .descritivo{
     display: flex;
     /* width: 360px; */
-    width: 230px;
+    width: 250px;
     margin: auto;
     flex-direction: column;
     text-align: center;
@@ -214,9 +188,25 @@ body{
 .descritivo>p{
     font-size: 20px;
     padding: 20px;
-    
+    display: flex;
 }
 
+.qualquer{
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    margin: auto;
+}
+
+.qualquer span{
+    color: #fcd603;
+}
+
+.qualquer>p{
+    padding: 15px;
+    border: 1px solid #0D0D0D;
+    margin: 10px;
+}
 .valor-item{
     border-top: 1px solid white;
 }
@@ -301,7 +291,31 @@ span#price>strong{
 
     
 }
-   
+.publico-alvo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    padding: 30px;
+}
+.publico-alvo>h3{
+    padding: 0 10px ;
+}
+
+.publico-alvo li{
+    padding: 8px 0 ;
+}
+
+.publico-alvo>p{
+    text-align: justify;
+    
+}
+
+.publico-alvo>botao-degrade{
+    margin: auto;
+}
+
+
 /* .garantia>div{
     background-image: linear-gradient(45deg,#f67600,#f59419,#f4b510,#f67600,#f59419);
 } */
@@ -374,7 +388,6 @@ span#price>strong{
 @media (836px <= width <= 991px){
     #principal-final{
         grid-template-columns: 300px 300px;
-        /* grid-template-columns: 200px 200px 200px 200px; */
         justify-content: center;
     }
     .botao-degrade{
