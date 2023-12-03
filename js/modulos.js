@@ -51,13 +51,14 @@ class ConteudoModulo extends HTMLElement{
             padding: 10px;
             background: #0D0D0D;
             margin: 5px;
-            grid-template-columns: 290px 50px;
+            grid-template-columns: 290px 20px;
             border-radius: 5px;
             cursor: pointer;
         }
        
         .modulo>span{
             background: #0D0D0D; 
+            
             
         }
 

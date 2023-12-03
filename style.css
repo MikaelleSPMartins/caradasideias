@@ -62,7 +62,20 @@ body{
     border-image: linear-gradient(to right, transparent, rgba(255,209,0,1), rgba(255,124,0,1), transparent) 1;
     border-style: solid;
     filter: brightness(1);
+    /* margin:30px; */
 }
+
+.borda-degrade>p{
+    padding-bottom: 80px;
+}
+
+[data-primeiro="primeiro"]{
+    margin-top: 40px;
+}
+/* [data-espacado="maisEspaco"]{
+    margin: 200px auto;
+} */
+
 .negative{
    
     display: flex;
@@ -70,14 +83,15 @@ body{
     font-size: 0.9em;
     letter-spacing: 1.2px;
     width:200px;
-    height: 160px;
+    height: 180px;
     align-items: center;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     margin: 20px auto;
-    border: 1px solid rgb(19, 255, 19);
-    box-shadow: 1px 1px 15px rgba(19, 255, 19, 0.774);
+    border: 1px solid #fcd603;
+    box-shadow: 1px 1px 15px #fcd603;
     justify-content: center;
+    gap: 10px;
    
    
 }
@@ -90,6 +104,9 @@ body{
 .container-secundario{
     text-align: center;
     padding: 20px;
+}
+.container-secundario>p:nth-child(1){
+    padding-bottom: 30px;
 }
 
 .course-structure{
@@ -147,11 +164,16 @@ body{
 
 .author{
     text-align: center;
-    padding: 50px 30px;
+    padding: 30px 30px 40px 30px;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    border-width: 0px 0px 4px 0px;
+    border-image: linear-gradient(to right, transparent, rgba(255,209,0,1), rgba(255,124,0,1), transparent) 1;
+    border-style: solid;
+    filter: brightness(1);
 }
    
 #euler-author{
@@ -177,18 +199,24 @@ body{
 .descritivo{
     display: flex;
     /* width: 360px; */
-    width: 250px;
+    width: 280px;
     margin: auto;
     flex-direction: column;
     text-align: center;
     align-items: center;
     line-height: 25px;
+
 }
 
 .descritivo>p{
     font-size: 20px;
-    padding: 20px;
+    padding: 30px;
     display: flex;
+}
+
+#total{
+    color: red;
+    font-size: 20px;
 }
 
 .qualquer{
@@ -204,8 +232,12 @@ body{
 
 .qualquer>p{
     padding: 15px;
-    border: 1px solid #0D0D0D;
+    
     margin: 10px;
+}
+#destaque{
+    font-size: 20px;
+    color: white;
 }
 .valor-item{
     border-top: 1px solid white;
@@ -307,7 +339,7 @@ span#price>strong{
 }
 
 .publico-alvo>p{
-    text-align: justify;
+    text-align: center;
     
 }
 
@@ -385,7 +417,10 @@ span#price>strong{
         grid-template-columns: 280px 280px 280px;
     }
 }
-@media (836px <= width <= 991px){
+@media (768px <= width <= 991px){
+    
+    
+
     #principal-final{
         grid-template-columns: 300px 300px;
         justify-content: center;
@@ -399,15 +434,12 @@ span#price>strong{
     }
 
 }
-/* @media (650px <= width <= 767px){
-    *{
-        background-color: brown;
-    
-    }
+ @media (650px <= width <= 767px){
+   
     #principal-final{
         grid-template-columns: 1fr 1fr 1fr;
        }
-} */
+} 
 @media (481px <= width <=835px){
     /* *{
         background-color: blueviolet;
@@ -418,14 +450,21 @@ span#price>strong{
      justify-content: center;
      
     }
-
+    .author>h3{
+        width: 200px;
+    }
 
 }
-/* @media (480px >= width){
+@media (480px >= width){
     
-    width: 230px;
+    .container-modulos>p{
+        font-size: 19px;
+    }
+    .author>h3{
+        width: 200px;
+    }
     
-}  */
+} 
 
 
 @keyframes line-through{
