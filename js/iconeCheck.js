@@ -30,7 +30,8 @@ class IconeCheck extends HTMLElement{
             display: grid;
             box-shadow: 1px 1px 8px #fcd603;
             text-shadow: 1px 1px 8px #fcd603;
-            margin: 12px
+            margin: 12px;
+            
           }
         `
         ;

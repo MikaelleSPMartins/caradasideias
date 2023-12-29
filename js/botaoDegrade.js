@@ -33,7 +33,6 @@ class BotaoDegrade extends HTMLElement{
             color: white;
             margin: 20px auto;
             transition: .2s ease-in-out;
-            
         }
         
         @keyframes degrade-animado {
@@ -49,8 +48,8 @@ class BotaoDegrade extends HTMLElement{
             
             cursor: pointer;
             transform: scale(1.1);
-            
         }
+        
         @media (836px <= width){
             .botao-degrade{
                 width: 300px;
