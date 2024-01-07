@@ -49,7 +49,7 @@ class ConteudoModulo extends HTMLElement{
         .modulo{
             display: grid;
             padding: 10px;
-            background: #0D0D0D;
+            background: #181818;
             margin: 5px;
             grid-template-columns: 290px 20px;
             border-radius: 5px;
@@ -57,14 +57,14 @@ class ConteudoModulo extends HTMLElement{
         }
        
         .modulo>span{
-            background: #0D0D0D; 
+            background: #181818; 
             
             
         }
 
         .conteudo{
             display: none;
-            background: #0D0D0D;
+            background: #181818;
             font-size: 15px;
             color: rgb(219, 207, 192);
             margin: 10px 0;
@@ -77,7 +77,7 @@ class ConteudoModulo extends HTMLElement{
             border: none;
             cursor: pointer;
             color: #fcd603;
-            background: #0D0D0D;
+            background: #181818;
             align-items:flex-end;
             text-align: center;
             transition:  .3s;
